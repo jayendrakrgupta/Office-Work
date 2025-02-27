@@ -1,0 +1,608 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    min-height: 100vh;
+    width: 100vw;
+} */
+
+.VehicleDetailTopImage {
+    width: 100%;
+}
+
+.BreadCrumbSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BreadCrumbContainer {
+    width: 90%;
+}
+
+.BreadCrumbText {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3170B6;
+    margin-top: 30px;
+}
+
+.BreadCrumbSelectedText {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.vehicleBrandImage {
+    height: 48px;
+    margin-top: 20px;
+}
+
+.vehicleModelName {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.vehicleModelNameSpan {
+    color: #373737;
+}
+
+.vehicleDetailsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vehicleLeftContainer {
+    width: 70%;
+
+}
+
+.vehicleLeftContainer {
+    .vehicleDetailImageContainer {
+        width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid #C9C9C9;
+        padding: 30px;
+        border-radius: 12px;
+    }
+
+    .vehicleDetailPreview {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+
+    .vehicleDetailSlideContainer {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        padding: 0 40px;
+    }
+
+    .splide {
+        padding: 0 20px;
+        margin-top: 0px;
+        width: 104%;
+        margin-left: -2%;
+        overflow: hidden;
+    }
+
+    .vehicleDetailSlidePreview {
+        width: 120px;
+        height: 80px;
+        /* border-radius: 8px; */
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        object-fit: cover;
+    }
+
+    .vehicleDetailSlidePreview:hover {
+        opacity: 0.9;
+    }
+
+    .is-active .vehicleDetailSlidePreview {
+        opacity: 1;
+        /* border: 2px solid #DA2725; */
+    }
+
+    .splide__arrow {
+        background: #3C3C3C;
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+        transition: background-color 0.3s ease;
+        z-index: 10;
+    }
+
+    .splide__arrow svg {
+        fill: #fff;
+        width: 12px;
+        height: 12px;
+    }
+
+    .splide__arrow:hover {
+        background: #b81e1c;
+    }
+
+    .splide__arrow:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+    .splide__arrows {
+        pointer-events: all;
+    }
+
+    .splide__arrow--prev {
+        left: 0px;
+    }
+
+    .splide__arrow--next {
+        right: 0px;
+    }
+
+    .splide__track {
+        overflow: hidden;
+        width: 100%;
+        padding: 0 200px;
+    }
+
+    .splide__list {
+        display: flex;
+        gap: 15px;
+    }
+
+    .splide__slide {
+        width: auto !important;
+        flex-shrink: 0;
+    }
+}
+
+.vehicleDetailDescriptionContainer {
+    margin-top: 10px;
+}
+
+.vehicleDetailDescriptionTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.vehicleDetailDescriptionTitleSpan {
+    color: #DA2725;
+}
+
+.vehicleDetailDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #595959;
+
+}
+
+
+.vehicleDetailVariantsContainer {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #C9C9C9;
+}
+
+
+.vehicleDetailVariantsContainer {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 19px 29px;
+        text-align: left;
+    }
+
+    th {
+        border-bottom: 1px solid #C9C9C9;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        background-color: white;
+        color: #303030;
+
+    }
+
+    td {
+        font-size: 14px;
+        font-weight: 500;
+        color: #303030;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #F9F9F9;
+    }
+
+    tr:nth-child(even) {
+        background-color: white;
+    }
+}
+
+.vehicleDetailEngineContainer {
+    margin-top: 19px;
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.vehicleDetailEngineWrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    color: #303030;
+    padding: 17px 29px;
+    cursor: pointer;
+}
+
+
+.vehicleDetailEngineContainer {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 19px 29px;
+        text-align: left;
+    }
+
+    th {
+        border-bottom: 1px solid #C9C9C9;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        background-color: white;
+        color: #303030;
+
+    }
+
+    td {
+        font-size: 14px;
+        font-weight: 500;
+        color: #303030;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #F9F9F9;
+    }
+
+    tr:nth-child(even) {
+        background-color: white;
+    }
+
+}
+
+
+.engineSpecificationsWrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    background: white;
+}
+
+
+
+.engineSpecificationsWrapper.collapsed {
+    max-height: 5000px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vehicleRightContainer {
+    width: 28%;
+}
+
+.vehicleHighlightsTitle {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.vehicleHighlightsContainer {
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+
+.vehicleHighlightDiv {
+    display: flex;
+    padding: 13px 0px 13px 29px;
+}
+
+.vehicleHighlightDivColored {
+    display: flex;
+    background: #F9F9F9;
+    padding: 13px 0px 13px 29px;
+
+}
+
+.vehicleHighlightText {
+    width: 55%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #303030;
+}
+
+.vehicleHighlightValue {
+    width: 45%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.vehicleContactContainer {
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+    margin-top: 16px;
+    padding: 24px 10px 14px 10px;
+}
+
+
+
+.whatsAppDiv {
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.whatsAppIconDiv {
+    margin-left: 20px;
+}
+
+.whatsAppText {
+    color: #535353;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+
+.vehicleContactIcon {
+    filter: invert(1);
+}
+
+.VehicleContactDiv {
+    display: flex;
+    margin-top: 27px;
+}
+
+.vehicleEmailDiv {
+    display: flex;
+    margin-top: 27px;
+    margin-bottom: 33px;
+}
+
+.vehicleButtonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookTestDriveButton {
+    border: none;
+    background: #DA2725;
+    padding: 14px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.EMIOffersButton {
+    border: 1px solid #000000;
+    padding: 14px 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.vehicleLocationContainer {
+    margin-top: 60px;
+}
+
+.vehicleLocationTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 17px;
+
+}
+
+.vehicleLocationMapDiv1,
+.vehicleLocationMapDiv2,
+.vehicleLocationMapDiv3 {
+    transition: all 0.3s ease-in-out;
+}
+
+.vehicleLocationMapDiv2,
+.vehicleLocationMapDiv3 {
+    display: none;
+}
+
+.vehicleLocationDiv {
+    display: flex;
+    gap: 25px;
+    color: #A7A7A7;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.vehicleLocation {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-wrap: nowrap;
+}
+
+.vehicleLocation:hover {
+    color: #DA2725;
+}
+
+.vehicleLocationSelected {
+    color: #DA2725;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.vehicleLocationDiv {
+    display: flex;
+    gap: 25px;
+    color: #A7A7A7;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.vehicleLocationSelected {
+    color: #DA2725;
+    cursor: pointer;
+}
+
+.vehicleLocation {
+    cursor: pointer;
+}
+
+.vehicleLocationMap {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 16px;
+    position: relative;
+}
+
+.vehicleLocationMap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+}
+
+.vehicleLocationText {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.vehicleYouMayAlsoLikeTitle {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media (max-width: 1080px) {
+    .vehicleLeftContainer{
+        width: 60%;
+    }
+
+    .vehicleRightContainer{
+        width: 38%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .vehicleLeftContainer{
+        width: 60%;
+    }
+
+    .vehicleRightContainer{
+        width: 38%;
+    }
+
+    
+}
+
+@media (max-width: 850px) {
+    .vehicleDetailsContainer{
+        flex-direction: column;
+    }
+
+    .vehicleLeftContainer{
+        width: 100%;
+    }
+
+    .vehicleRightContainer{
+        width: 100%;
+    }
+    .vehicleHighlightsTitle{
+        margin-top: 20px;
+    }
+
+    .vehicleLeftContainer {
+        .vehicleDetailImageContainer {
+            padding: 10px;
+        }
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    
+    .vehicleDetailVariantsContainer {
+        th, td {
+            padding: 10px 10px;
+            text-align: left;
+        }
+    }
+
+    .vehicleDetailEngineContainer {
+        th, td {
+            padding: 10px 10px;
+            text-align: left;
+        }
+    }
+
+    .vehicleDetailEngineWrapper{
+        padding: 10px 10px;
+    }
+
+    .vehicleLocationDiv{
+        gap: 0;
+        justify-content: space-between;
+    }
+    
+}

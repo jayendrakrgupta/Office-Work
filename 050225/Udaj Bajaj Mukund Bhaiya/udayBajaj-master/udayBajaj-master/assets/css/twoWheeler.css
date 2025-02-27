@@ -1,0 +1,754 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.thirdpagevehicleImageContainer {
+    display: flex;
+    position: relative;
+    height: 30vw;
+
+}
+
+.thirdPageVehicleImageDiv{
+    display: flex;
+    position: absolute;
+}
+
+.thirdPageVehicleImage{
+    width: 100vw;
+    height: 30vw;
+    object-fit: cover;
+}
+
+
+.thirdPageSelectDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.thirdPageWrapper{
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.thirdPageWheeler{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.homeVehicleSelector, .homeVehicleSelector a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3170B6 ;
+}
+.vehicleArrow{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3170B6;
+}
+
+.selectTwoWheelerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VehicleType{
+    display: flex;
+    text-wrap:nowrap;
+}
+
+.selectBikeType{
+    border: 1px solid rgba(184, 184, 184, 1);
+    border-radius: 8px;
+    padding: 12px 10px;
+    margin-left: 14px;
+}
+
+
+.filterIconDiv{
+    display:none;
+}
+.filterIcon{
+    height:30px;
+    cursor: pointer;
+}
+
+.selectModel{
+    color: rgba(130, 130, 130, 1);
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.18);
+    margin-left: 13px;
+
+}
+.modelsAndvehicles{
+    font-size: 14px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.ResetAll{
+    background-color: #DA2725;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 40px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    text-wrap:nowrap;
+}
+
+
+.Line_div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-top: 42px;
+    justify-content: center;
+}
+
+.Linewidth {
+    background-color: #D2D2D2;
+    height: 1px;
+    width: 88%;
+}
+
+.pulsarDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 43px;
+}
+
+.pulsarText{
+    font-size: 36px;
+    font-weight: 600;
+    color: #373737;
+}
+
+
+.vehicleImageContainer{
+    display: flex;
+    position: relative;
+    height: 30vw;
+    margin-bottom: 140px;    
+}
+
+.vehicleImageDiv{
+    display: flex;
+    position: absolute;
+}
+
+.vehicleImage{
+    width: 100vw;
+    height: 30vw;
+    object-fit: cover;
+}
+.brandsDiv{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 86%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    padding: 4px 39px 24px 35px;
+    box-shadow: 0px 2px 25px 11px #00000012;
+}
+
+.brand_name{
+    font-size: 46px;
+    font-weight: 600;
+    color: #373737;
+}
+.brandLogo{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 13px;
+}
+.vehicleBrandLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+}
+
+.brandImage{
+    width: 80%;
+}
+
+.vehicleSelectDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.vehicleWrapper{
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.homeColored{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.SelectorHome, .SelectorHome a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3170B6 ;
+}
+.homeArrow{
+    font-size: 14px;
+    font-weight: 600;
+    color: #3170B6;
+}
+
+.vehicleTypeDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VehicleType{
+    display: flex;
+    text-wrap:nowrap;
+}
+
+.vehicleSelector{
+    border: 1px solid rgba(184, 184, 184, 1);
+    border-radius: 8px;
+    height: 35px;
+    width: 153px;
+    margin-left: 14px;
+}
+
+
+.selectType{
+    color: rgba(130, 130, 130, 1);
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.18);
+    margin-left: 13px;
+
+}
+.vehicleName{
+    font-size: 14px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.vehicaleBikeHeader{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.vehicleBikeDiv{
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.twoWheelerSection{
+    color: #DA2725;
+    font-size: 46px;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.vehicleTypeName{
+    color: #373737;
+}
+
+.ViewAll{
+    background-color: #DA2725;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 142px;
+border-radius: 8px;
+}
+
+
+@media(max-width:1025px){
+ .selectTwoWheelerDiv{
+    display: none;
+ }
+ .filterIconDiv{
+    display: block;
+ }
+}
+@media(max-width:500px){
+    .VehicleType{
+        display: none;
+    }
+    .homeColored{
+        display: none;
+    }
+    .homeArrow{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+    .twoWheelerSection{
+        color: #DA2725;
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .ViewAll{
+        height: 35px;
+        width: 100px;
+    }
+
+}
+@media(max-width:500px){
+    .twoWheelerSection{
+        color: #DA2725;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .ViewAll{
+        height: 35px;
+        width: 100px;
+    }
+    .thirdPageSelectDiv{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+
+}
+@media(max-width:400px){
+    .twoWheelerSection{
+        color: #DA2725;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .ViewAll{
+        height: 35px;
+        width: 100px;
+    }
+
+    .thirdPageWheeler{
+        font-size: 14px;
+    }
+    
+    .homeVehicleSelector, .homeVehicleSelector a {
+        font-size: 14px;
+    }
+    .vehicleArrow{
+        font-size: 14px;
+    }
+    .thirdPageSelectDiv{
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+
+}
+
+
+.Two_wheelers_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 145px;
+} 
+.two_wheelers_heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.card_container{
+    width: 90%;
+    /* max-width: 1200px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.twoWheeleritem{
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.twoWheeleritem:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #b0b0b0;
+}
+
+.twoWheelerImage_div {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Four_wheelers_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 81px;
+} 
+.vehicleAllImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bike_details{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+.detail_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bike_name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.bike_price{
+    color: #DA2725;
+    font-size: 20px;
+    font-weight: 700;
+}
+.Milage_detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 500;
+}
+.bike_line{
+    border: 1px solid #e0e0e0;
+    height: 20px;
+}
+
+.petroLogo{
+    object-fit: contain;
+    width: 18px;
+    height: 23px;
+}
+.ccLogo{
+    object-fit: contain;
+    width: 22px;
+    height: 22px;
+}
+
+
+@media(max-width:1180px){
+    .card_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:780px){
+    .card_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.Line-div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.Line {
+    background-color: #D2D2D2;
+    height: 1px;
+    width: 90%;
+}
+
+
+
+.vehicleEnquireParra{
+    font-size: 16px;
+    font-weight: 400;
+    color: #595959;
+    margin-bottom: 35px;
+    }
+.vehicles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.vehicles__grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.vehicle-card {
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.vehicle-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #b0b0b0;
+}
+
+.vehicle-card__image {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.vehicle-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.vehicle-card__content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.vehicle-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicle-card__name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.vehicle-card__price {
+    color: #DA2725;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.vehicle-card__specs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.vehicle-card__spec {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.vehicle-card__divider {
+    border: 1px solid #e0e0e0;
+    height: 20px;
+}
+
+.vehicle-card__icon {
+    object-fit: contain;
+}
+
+.vehicle-card__icon--fuel {
+    width: 18px;
+    height: 23px;
+}
+
+.vehicle-card__icon--engine {
+    width: 22px;
+    height: 22px;
+}
+
+.vehicle-card__icon--mileage {
+    width: 26px;
+    height: 18px;
+}
+
+@media(max-width:1180px) {
+    .vehicles__grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:780px) {
+    .vehicles__grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+.dominorDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 42px;
+    margin-top: 30px;
+}
+
+.dominorText{
+    font-size: 36px;
+    font-weight: 600;
+    color: #373737;
+}
+
+.filterDiv {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: -2px 0 5px rgba(255, 255, 255, 0.9);
+    transition: right 0.5s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it is on top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.filterIcon {
+    cursor: pointer;
+}
+
+.filterContent {
+    padding: 20px;
+    width: 300px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.closeIconMobile{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.filterTitleMobile{
+font-size: 20px;
+font-weight: 600;
+}
+
+.filterLine{
+    border: 1px solid #000000;
+    width: 100%;
+    margin: -5px auto 15px auto;
+}
+
+.selectBikeTypeMobile {
+    width: 100%; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    border: 1px solid rgba(184, 184, 184, 1);
+    border-radius: 8px;
+    padding: 12px 10px;
+}
+
+
+.ResetAllApplyDiv{
+    display: flex;
+}
+.ResetAllMobile, #applyBtn {
+    background-color: #DA2725;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    text-wrap:nowrap;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 780px) {    
+    .dominorDiv {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,454 @@
+* {
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.vehicleImageContainer {
+    display: flex;
+    position: relative;
+    height: 30vw;
+    margin-bottom: 140px;
+}
+
+.vehicleImageDiv {
+    display: flex;
+    position: absolute;
+}
+
+.vehicleImage {
+    width: 100vw;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.brandsDiv {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 86%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    padding: 4px 39px 24px 35px;
+    box-shadow: 0px 2px 25px 11px #00000012;
+}
+
+.brandContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand_name {
+    font-size: 46px;
+    font-weight: 600;
+    color: #373737;
+}
+
+
+.vehicleBrandLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:230px;
+    padding: 12px;
+    height: 100px;
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+}
+
+.brandImage {
+    width: 90%;
+}
+
+
+
+
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .brand_name {
+        font-size: 38px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+    .brandsDiv {
+        padding: 2px 20px 12px 18px;
+    }
+    .brand_name {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .vehicleBrandLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:120px;
+        padding:6px;
+        height: 50px;
+        border: 1px solid #C9C9C9;
+        border-radius: 12px;
+    }
+    
+    .brandImage {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+.FourWheelerSection, .ThreeWheelerSection{
+    margin-top: -100px;
+}
+
+}
+@media (max-width: 480px) {
+    .brand_name {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+}
+
+.vehicleSelectDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.vehicleWrapper {
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.homeColored {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.SelectorHome,
+.SelectorHome a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3170B6;
+}
+
+.homeArrow {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3170B6;
+}
+
+.vehicleTypeDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VehicleType {
+    display: flex;
+    text-wrap: nowrap;
+font-size: 16px;
+font-weight: 600;
+color: #595959;
+}
+
+.vehicleSelector {
+    border: 1px solid rgba(184, 184, 184, 1);
+    border-radius: 8px;
+    padding: 6px 10px 6px 13px;
+    color: #828282;
+    margin-left: 14px;
+}
+
+
+.selectType {
+    color: rgba(130, 130, 130, 1);
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.18);
+    margin-left: 13px;
+
+}
+
+.vehicleName {
+    font-size: 14px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.vehicleBikeHeader {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicleBikeDiv {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twoWheelerSection {
+    color: #DA2725;
+    font-size: 46px;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.vehicleTypeName {
+    color: #373737;
+}
+
+.ViewAll {
+    background-color: #DA2725;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 142px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media(max-width:500px) {
+    .VehicleType {
+        display: none;
+    }
+
+    .homeColored {
+        display: none;
+    }
+
+    .homeArrow {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    .twoWheelerSection {
+        color: #DA2725;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .ViewAll {
+        height: 35px;
+        width: 100px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .twoWheelerSection {
+        color: #DA2725;
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .ViewAll {
+        height: 35px;
+        width: 100px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .twoWheelerSection {
+        color: #DA2725;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .ViewAll {
+        height: 35px;
+        width: 100px;
+    }
+
+}
+
+
+.Two_wheelers_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 145px;
+}
+
+.two_wheelers_heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.card_container {
+    width: 90%;
+    /* max-width: 1200px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.twoWheeleritem {
+    border: 1px solid #C9C9C9;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.twoWheeleritem:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #b0b0b0;
+}
+
+.twoWheelerImage_div {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Four_wheelers_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 81px;
+}
+
+.vehicleAllImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bike_details {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bike_name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.bike_price {
+    color: #DA2725;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Milage_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bike_line {
+    border: 1px solid #e0e0e0;
+    height: 20px;
+}
+
+.petroLogo {
+    object-fit: contain;
+    width: 18px;
+    height: 23px;
+}
+
+.ccLogo {
+    object-fit: contain;
+    width: 22px;
+    height: 22px;
+}
+
+.vehicleLogo {
+    width: 26px;
+    height: 18px;
+    object-fit: contain;
+}
+
+@media(max-width:1180px) {
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:780px) {
+    .card_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.Line-div {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.Line {
+    background-color: #D2D2D2;
+    height: 1px;
+    width: 90%;
+}
+
+
+.vehicleEnquireParra {
+    font-size: 16px;
+    font-weight: 400;
+    color: #595959;
+    margin-bottom: 35px;
+}

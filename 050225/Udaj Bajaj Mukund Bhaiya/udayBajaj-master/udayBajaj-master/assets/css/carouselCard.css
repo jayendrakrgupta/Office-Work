@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.CarouselCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.CarouselCardWrapper {
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.CarouselCardsTitleColoured {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    color: #DA2725;
+    margin-bottom: 49px;
+}
+
+.CarouselCardsTitle {
+    color: #000;
+}
+
+/* Splide Styles */
+.splide {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.splide__track {
+    overflow: hidden;
+}
+
+.splide__list {
+    margin: 0 !important;
+}
+
+.splide__arrow {
+    width: 50px !important;
+    height: 50px !important;
+    background: #3C3C3C !important;
+    opacity: 1 !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.splide__arrow svg {
+    display: none;
+}
+
+.splide__arrow i {
+    color: white;
+    font-size: 25px;
+}
+
+.splide__arrow:hover {
+    /* background: #DA2725 !important; */
+}
+
+.splide__arrow:disabled {
+    opacity: 0.5 !important;
+    background: #3C3C3C !important;
+}
+
+.splide__arrow--prev {
+    left: 0 !important;
+}
+
+.splide__arrow--next {
+    right: 0 !important;
+}
+
+/* Card Styles */
+.CarouselCard {
+    border: 1px solid #C9C9C9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 28px;
+    border-radius: 12px;
+    background: #fff;
+    width: 359px !important;
+    overflow: hidden;
+}
+
+.CarouselCardImg {
+    width: 359px;
+    height: 217px;
+    object-fit: contain;
+}
+
+.CarouselNamePrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 12px;
+}
+
+.CarouselVehicleName{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-wrap: nowrap;
+}
+
+.price {
+    color: #DA2725;
+    font-size: 20px;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+.rupeeSymbol {
+    font-family: "Roboto";
+}
+
+.CarouselDetailContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.CarouselDetailWrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.CarouselVehicleType{
+    color: #606060;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.CarouselLine{
+    height: 17px;
+    border: 1px solid #999999;
+}
+
+@media (max-width: 1024px) {
+    .splide__arrow--prev {
+        left: 0 !important;
+    }
+
+    .splide__arrow--next {
+        right: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .splide__arrow {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .splide__arrow i {
+        font-size: 10px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .splide__arrow img{
+        width: 80%;
+
+    }
+    .splide__arrow--prev {
+        left: 0px !important;
+    }
+
+    .splide__arrow--next {
+        right: 0px !important;
+    }
+
+    .CarouselCard {
+        width: 280px !important;
+    }
+    
+    .CarouselCardImg {
+        width: 280px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .CarouselCardsTitleColoured {
+        font-size: 28px;
+    }
+    
+    .CarouselVehicleName,
+    .price {
+        font-size: 16px;
+    }
+    
+    .CarouselVehicleType {
+        font-size: 14px;
+    }
+    
+    .CarouselCardImg {
+        width: 200px;
+        height: 140px;
+    }
+    
+    .CarouselCard {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .CarouselCardImg {
+        width: 75vw;
+        height: 217px;
+        object-fit: contain;
+    }
+    .CarouselCard {
+        border: 1px solid #C9C9C9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 8px;
+        border-radius: 12px;
+        background: #fff;
+        /* width: 80vw !important; */
+    }
+}

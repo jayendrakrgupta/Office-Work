@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/vehicles.css">
+    <link rel="stylesheet" href="./assets/css/faqEnquire.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Splide.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header Contact Section Start -->
+    <div class="MostTopContainer">
+        <div class="MostTopWrapper">
+            <div class="contactInfo">
+                <div class="contactDiv">
+                    <img src="./assets/icons/call.svg" alt="call" class="contactIcon">
+                    <a href="tel:+917705008603" class="contact-link">
+                        <p class="ContactText">+91 77050 08603</p>
+                    </a>
+                </div>
+                <div class="MostTopLine"></div>
+                <div class="contactDiv contact_div2">
+                    <img src="./assets/icons/mail.svg" alt="mail" class="contactIcon">
+                    <a href="mailto:uday.auto@gmail.com" class="contact-link">
+                        <p class="ContactText">uday.auto@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="MostTopSocialDiv">
+
+                <img src="./assets/icons/facebook.svg" alt="facebook" class="socialIcon">
+                <img src="./assets/icons/youtube.svg" alt="youtube" class="socialIcon">
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Contact Section End -->
+
+    <!-- Header Section Start -->
+    <div class="HeaderContainer">
+        <div class="HeaderWrapper">
+
+            <div class="LogoDiv">
+                <a href="index.html" class="headerLogo">
+                    <img src="assets/img/logo-uday.png" alt="logo-img">
+                    <img src="assets/img/uday-autosales.png" alt="logo-img">
+                </a>
+            </div>
+
+
+
+
+            <div class="NavigationDivDesktop">
+                <div class="NavigationLink"> <a href="index.html">Home</a></div>
+                <div class="NavigationLink">About</div>
+                <div class="SelectedNavigationLink">Vehicles</div>
+                <div class="NavigationLink">Our Stores</div>
+                <div class="NavigationLink hasDropdown">
+                    Our Services
+                    <div class="DropdownMenu">
+                        <a href="service1.html" class="DropdownItem">Service 1</a>
+                        <a href="service2.html" class="DropdownItem">Service 2</a>
+                        <a href="service3.html" class="DropdownItem">Service 3</a>
+                        <a href="service4.html" class="DropdownItem">Service 4</a>
+                    </div>
+                </div>
+                <div class="NavigationLink">Gallery</div>
+                <div class="NavigationLink">Contact</div>
+
+                <div class="EnquireNowButtonDiv">
+                    <button class="EnquireNowButton">Enquire Now</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="NavigationDivMobile">
+            <img src="./assets/icons/menu.png" alt="menu" class="menuIcon">
+        </div>
+
+        <div class="menu-overlay"></div>
+        <div class="MobileMenu">
+            <div class="MobileMenuHeader">
+                <img src="/assets/icons/close.png" alt="close" class="closeIcon">
+            </div>
+            <div class="MobileMenuContent">
+                <div class="MobileMenuItem"> <a href="index.html">Home</a></div>
+                <div class="MobileMenuItem">About</div>
+                <div class="MobileMenuItem">Vehicles</div>
+                <div class="MobileMenuItem">Our Stores</div>
+                <div class="MobileMenuItem hasDropdown">
+                    <div class="MobileMenuItemHeader">
+                        Our Services
+                        <span class="MobileDropdownArrow"></span>
+                    </div>
+                    <div class="MobileDropdownMenu">
+                        <a href="service1.html" class="MobileDropdownItem">Service 1</a>
+                        <a href="service2.html" class="MobileDropdownItem">Service 2</a>
+                        <a href="service3.html" class="MobileDropdownItem">Service 3</a>
+                        <a href="service4.html" class="MobileDropdownItem">Service 4</a>
+                    </div>
+                </div>
+                <div class="MobileMenuItem">Gallery</div>
+                <div class="MobileMenuItem">Contact</div>
+                <div class="MobileMenuButton">
+                    <button class="EnquireNowButton">Enquire Now</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- ----Header Section End-----------  -->
+
+    <!-- ----------------Home Image Section Start Here------------------- -->
+
+    <div class="vehicleImageContainer">
+        <div class="vehicleImageDiv">
+            <img src="./assets/img/VehicleHeaderImg.png" class="vehicleImage">
+        </div>
+        <div class="brandsDiv">
+            <div class="brand_name">Brands</div>
+            <div class="brandContainer splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide vehicleBrandLogo">
+                            <img src="./assets/img/bajaj.png" class="brandImage">
+                        </li>
+                        <li class="splide__slide vehicleBrandLogo">
+                            <img src="./assets/img/ktm.png" class="brandImage">
+                        </li>
+                        <li class="splide__slide vehicleBrandLogo">
+                            <img src="./assets/img/chetak.png" class="brandImage">
+                        </li>
+                        <li class="splide__slide vehicleBrandLogo">
+                            <img src="./assets/img/triumph.png" class="brandImage">
+                        </li>
+                        <li class="splide__slide vehicleBrandLogo">
+                            <img src="./assets/img/bajajcom.png" class="brandImage">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="vehicleSelectDiv">
+        <div class="vehicleWrapper">
+            <div class="SelectorHome"><a href="index.html">  Home </a><span class="homeArrow">></span> <span class="homeColored"> Vehicles</span></div>
+            <div class="vehicleTypeDiv">
+                <div class="VehicleType">
+                    Vehicle Type</div>
+                <select id="vehicle" name="vehicle" class="vehicleSelector">
+                <option value="showall" selected class="selectType">Show all</option>
+                <option value="2-wheelers" class="vehicleName">Two Wheelers</option>
+                <option value="3-wheelers" class="vehicleName">Three Wheelers</option>
+                <option value="4-wheelers" class="vehicleName">Four Wheelers</option>
+                  
+            </select>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Home Image Section End Here------------------- -->
+
+
+
+    <!-- --------------------Two Wheeler Selection Start Here---------------- -->
+
+    <section class="TwoWheelerSection">
+        <div class="vehicleBikeHeader">
+            <div class="vehicleBikeDiv">
+                <div class="twoWheelerSection">Two <span class="vehicleTypeName"> Wheelers</span> </div>
+                <div class="ViewAll">View All</div>
+            </div>
+        </div>
+
+
+
+        <div class="Two_wheelers_section">
+            <div class="card_container">
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/Bike1.png" alt="Pulsar N 160" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Pulsar N 160</div>
+                            <div class="bike_price">₹1,30,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 160
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 35km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/bike2.png" alt="Chetak EV" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Chetak EV</div>
+                            <div class="bike_price">₹1,15,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/chargingStation.svg" alt="Fuel Type" class="petroLogo"> Electric
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 110
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo"> 110km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/bike3.png" alt="Dominor 400" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Dominor 400</div>
+                            <div class="bike_price">₹2,35,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 160
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 35km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/bike4.png" alt="Platina 110 ABS" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Platina 110 ABS</div>
+                            <div class="bike_price">₹90,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 110
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 45km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/bike5.png" alt="Avenger 160 Street" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Avenger 160 Street</div>
+                            <div class="bike_price">₹1,90,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 160
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 45km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/bike6.png" alt="Platina 100 ES Drum" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Platina 100 ES Drum</div>
+                            <div class="bike_price">₹80,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 100
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 45km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- --------------------Two Wheeler Selection End Here---------------- -->
+
+
+    <!-- --------------------Three Wheeler Selection Start Here---------------- -->
+
+
+    <section class="ThreeWheelerSection">
+        <div class="vehicleBikeHeader">
+            <div class="vehicleBikeDiv">
+                <div class="twoWheelerSection">Three <span class="vehicleTypeName"> Wheelers</span> </div>
+                <div class="ViewAll">View All</div>
+            </div>
+        </div>
+
+
+
+        <div class="Two_wheelers_section">
+            <div class="card_container">
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="assets/img/auto_wide.png" alt="Bajaj Maxima X Wide" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Bajaj Maxima X Wide</div>
+                            <div class="bike_price">₹2,45,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 160
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 35km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="assets/img/auto_wide.png" alt="Bajaj Maxima G" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Bajaj Maxima G</div>
+                            <div class="bike_price">₹1,98,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/chargingStation.svg" alt="Fuel Type" class="petroLogo"> Electric
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 110
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo"> 110km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="assets/img/auto_wide.png" alt="Bajaj RE" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Bajaj RE</div>
+                            <div class="bike_price">₹2,36,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 160
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 35km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------Three Wheeler Selection End Here---------------- -->
+
+
+    <!-- --------------------Four Wheeler Selection Start Here---------------- -->
+    <section class="FourWheelerSection">
+        <div class="vehicleBikeHeader">
+            <div class="vehicleBikeDiv">
+                <div class="twoWheelerSection">Four <span class="vehicleTypeName"> Wheelers</span> </div>
+                <div class="ViewAll">View All</div>
+            </div>
+        </div>
+
+
+        <div class="Four_wheelers_section">
+            <div class="card_container">
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/fourwheeler1.png" alt="Bajaj Qute Yellow" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Bajaj Qute Yellow</div>
+                            <div class="bike_price">₹3,61,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/petrol.svg" alt="Fuel Type" class="petroLogo"> Petrol
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 160
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo"> 35km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/fourwheeler2.png" alt="Bajaj Qute White" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Bajaj Qute White</div>
+                            <div class="bike_price">₹3,75,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/chargingStation.svg" alt="Fuel Type" class="petroLogo"> Electric
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 110
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo"> 110km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twoWheeleritem">
+                    <div class="twoWheelerImage_div">
+                        <img src="./assets/img/fourwheeler3.png" alt="Bajaj Qute Black" class="vehicleAllImage">
+                    </div>
+                    <div class="bike_details">
+                        <div class="detail_container">
+                            <div class="bike_name">Bajaj Qute Black</div>
+                            <div class="bike_price">₹3,75,000</div>
+                        </div>
+                        <div class="Milage_detail">
+                            <div class="detail">
+                                <img src="./assets/img/icon/chargingStation.svg" alt="Fuel Type" class="petroLogo"> Electric
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/cc.svg" alt="Engine Capacity" class="ccLogo"> 110
+                            </div>
+                            <div class="bike_line"></div>
+                            <div class="detail">
+                                <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo"> 110km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div class="Line-div">
+        <div class="Line"></div>
+    </div>
+
+
+    <!-- --------------------Three Wheeler Selection End Here---------------- -->
+
+
+
+
+
+    <!-- ------------------------FAQ and Enquire Start Here------------------------ -->
+
+    <div class="faqEnquireContainer">
+
+        <div class="faqEnquireWrapper">
+
+            <div class="faqContainer">
+                <h2 class="FAQsTitle">FAQs</h2>
+
+
+
+
+                <div class="faqWrapper">
+                    <div class="questionDiv">
+                        <div class="question"> What is CBT? </div>
+                        <div class="plus">+</div>
+                        <div class="minus">-</div>
+                    </div>
+                    <div class="answer"> Dealers are set up to provide rides, including demo bikes, insurance, and license checks. </div>
+                </div>
+
+                <div class="faqWrapper">
+                    <div class="questionDiv">
+                        <div class="question"> What are the different types of motorcycles? </div>
+                        <div class="plus">+</div>
+                        <div class="minus">-</div>
+                    </div>
+                    <div class="answer"> Dealers are set up to provide rides, including demo bikes, insurance, and license checks. </div>
+                </div>
+
+
+                <div class="faqWrapper">
+                    <div class="questionDiv">
+                        <div class="question"> How is the supply of spare parts? </div>
+                        <div class="plus">+</div>
+                        <div class="minus">-</div>
+                    </div>
+                    <div class="answer"> Dealers are set up to provide rides, including demo bikes, insurance, and license checks. </div>
+                </div>
+
+
+
+                <div class="faqWrapper">
+                    <div class="questionDiv">
+                        <div class="question">What engine size should a beginner's motorcycle have? </div>
+                        <div class="plus">+</div>
+                        <div class="minus">-</div>
+                    </div>
+                    <div class="answer"> Dealers are set up to provide rides, including demo bikes, insurance, and license checks. </div>
+                </div>
+
+                <div class="faqWrapper">
+                    <div class="questionDiv">
+                        <div class="question"> Can I take a test ride? </div>
+                        <div class="plus">+</div>
+                        <div class="minus">-</div>
+                    </div>
+                    <div class="answer"> Dealers are set up to provide rides, including demo bikes, insurance, and license checks. </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="enquireContainer">
+                <h2 class="FAQsTitle"><span class="ColouredText">Enquire</span> Now</h2>
+
+                <div class="vehicleEnquireParra">Fill in the data to get a callback</div>
+
+                <div class="InputDiv">
+                    <div class="inputText">Name <span class="colouredInputText">*</span></div>
+                    <input class="inputBox">
+                </div>
+
+                <div class="InputDiv">
+                    <div class="inputText">Mobile Number <span class="colouredInputText">*</span></div>
+                    <input class="inputBox">
+                </div>
+                <div class="InputDiv">
+                    <div class="inputText">Select Model <span class="colouredInputText">*</span></div>
+                    <input class="inputBox">
+                </div>
+                <div class="InputDiv">
+                    <div class="inputText">Select State <span class="colouredInputText">*</span></div>
+                    <input class="inputBox">
+                </div>
+                <div class="InputDiv">
+                    <div class="inputText">Select City <span class="colouredInputText">*</span></div>
+                    <input class="inputBox">
+                </div>
+
+
+                <div class="submitBtnDiv">
+
+                    <div class="submitText">By clicking on Submit, you agree to our <span class="colouredSubmitText">T&C</span> and <span class="colouredSubmitText">Privacy Policy</span></div>
+                    <Button class="submitBtn">Submit</Button>
+                </div>
+
+                <div class="mandatoryText">“<span class="colouredInputText">*</span>” Mark fields are mandatory</div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- ------------------------FAQ and Enquire End Here------------------------ -->
+
+    <!-- Footer Section Start Here-->
+    <div class="Footer_twoWheelerImage_div">
+        <div class="footer_img">
+            <img src="./assets/img/FooterImage.png" alt="Image" class="Img">
+            <img src="./assets/img/FooterImage.png" alt="Image" class="Img">
+            <img src="./assets/img/FooterImage.png" alt="Image" class="Img">
+        </div>
+
+    </div>
+
+    <!-- -------------------------------------------------------------- -->
+
+    <div class="footer">
+        <div class="footer_div">
+            <div class="social_icon">
+                <div class="logo">
+                    <a href="index.html" class="header-logo">
+                        <img src="assets/img/logo-uday.png" alt="logo-img">
+                        <img src="assets/img/UdayAutosales.png" alt="logo-img">
+                    </a>
+                </div>
+                <div class="footer_wrapper">
+                    <ul class="contact_list">
+                        <li>
+                            <i class="fas fa-phone"></i> +91 77050 08603
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:uday.auto@gmail.com" class="link">uday.auto@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="footer_social_div">
+                        <div class="footer_social_icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_text">
+                <div class="footer_comapany_div">
+                    <div class="header_name">Company</div>
+                    <div class="home"><a href="index.html">
+            Home 
+            </a></div>
+                    <div class="home">About</div>
+                    <div class="home">Our Stores</div>
+                    <div class="home">Our Services</div>
+                    <div class="home">Book A Test Drive</div>
+                </div>
+                <div class="footer_brands_div">
+                    <div class="header_name">Brands</div>
+                    <div class="home">KTM</div>
+                    <div class="home">Triumph</div>
+                    <div class="home">Bajaj Pulsar</div>
+                    <div class="home">Bajaj Chetak</div>
+                    <div class="home">Bajaj Auto</div>
+                    <div class="home">Bajaj Qute</div>
+                </div>
+                <div class="footer_products_div">
+                    <div class="header_name">Products</div>
+                    <div class="home">KTM</div>
+                    <div class="home">Bajaj Bikes</div>
+                    <div class="home">Chetak EV</div>
+                    <div class="home">3 Wheelers</div>
+                    <div class="home">Qute</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer_kvt_div">
+        <div class="footer_kvt">
+            <div class="footer_first"> 2025 Copyright Uday Autosales Pvt. Ltd. All Rights Reserved</div>
+            <div class="footer_first">Website powered by
+                <span class="footer_last_kvt"><a target="_blank" href="https://www.kvtmedia.com/"> KVT Media</a></span></div>
+        </div>
+    </div>
+    <!-- Footer Section End Here-->
+
+
+
+
+
+    <script src="assets/js/index.js"></script>
+    <script src="./assets/js/custom/faqEnquire.js"></script>
+    <script src="./assets/js/custom/header.js"></script>
+    <script src="./assets/js/custom/slider.js"></script>
+    <script src="./assets/js/custom/vehicles.js"></script>
+
+</body>
+
+</html>

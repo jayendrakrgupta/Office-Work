@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page without login</title>
+    <link rel="stylesheet" href="mainproject.css">
+</head>
+
+<body>
+    <nav>
+
+        <h1>Job Finder </h1>
+        <div class="button-container">
+            <button id="login" class="navbutton" onclick="login.html">Login</button>
+            <button id="register" class="navbutton"onclick="Registration.html">Register</button>
+        </div>
+    </nav>
+    <div class="search-container">
+        <div class="search-bar">
+            <img src="searchicon.png" alt="job" width="20px" height="20px">
+            <input type="text" placeholder="Type any job title" class="search-input" value-name="searchh">
+            
+        </div>
+        <div class="filter-container">
+            <select name="filter" id="filter" class="filter">
+                <option value="location">Location</option>
+                <option value="company">Company</option>
+                <option value="jobtype">Job Type</option>
+            </select>
+            
+        </div>
+</body>
+
+</html>

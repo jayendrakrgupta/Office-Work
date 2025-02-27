@@ -1,0 +1,250 @@
+.WelcomeContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.Contain {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.Image-Container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ImageWrapper {
+    display: flex;
+}
+
+.Image {
+    width: 242px;
+    height: 332px;
+    object-position: 70%;
+    border-radius: 60px 0 60px;
+    object-fit: cover;
+}
+
+.First-div {
+    border-radius: 60px 0 60px;
+}
+
+.Sec-div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Image-1 {
+    width: 242px;
+    height: 158px;
+    border-radius: 0 0 60px;
+}
+
+.Image-2 {
+    margin-top: 16px;
+    width: 242px;
+    height: 158px;
+    border-radius: 0 60px 0 60px;
+}
+
+.Third-image {
+    width: 242px;
+    height: 158px;
+}
+
+.Detail-Container {
+    margin-left: 75px;
+    
+}
+
+.Heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.Welcome-to {
+    color: #DA2725;
+    font-size: clamp(27px,36px,3vw);
+    /* font-size: 36px; */
+    font-weight: 500;
+}
+
+.Uday{
+    color: #373737;
+    font-size: clamp(27px,46px,3.8vw);
+    font-weight: 600;
+}
+
+.WelcomePara{
+    color: #595959;
+    font-size: clamp(12px,17px,1.5vw);
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0;
+    width: 95%;
+}
+
+.Main-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.Image-div {
+    display: flex;
+}
+
+.Sell-Num {
+    width: 84px;
+    height: 43px;
+    font-size: clamp(24px,32px,2.5vw);
+    font-weight: 600;
+    color: #5B5B5B;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.All-Num {
+    width: 84px;
+    height: 43px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #5B5B5B;
+    margin-left: 12px;
+}
+
+.Text-div {
+    color: #5B5B5B;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.People-div,
+.World-div,
+.Sell-div {
+    width: 30%;
+}
+
+.Line-div {
+    display: flex;
+    width: 100%;
+    margin-top: 77px;
+    justify-content: center;
+}
+
+.Line {
+    background-color: #D2D2D2;
+    height: 1px;
+    width: 90%;
+}
+
+@media (max-width: 1067px) {
+
+    .Contain {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+    .Detail-Container {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Image-Container {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Image {
+        width: 40vw;
+        height: 54vw;
+        object-fit: cover;
+    }
+
+    .Image-1, .Image-2 {
+        width: 40vw;
+        height: 26vw;
+        object-fit: cover;
+    }
+
+    .WelcomePara {
+        text-align: center;
+        margin: 23px auto 0;
+    }
+
+    .Main-div {
+        justify-content: center;
+    }
+
+        .Image {
+            border-radius: 40px 0 40px;
+        }
+        .Image-1 {
+            border-radius: 0 0 40px;
+        }
+        .Image-2 {
+            border-radius: 0 40px 0 40px;
+        }
+        .Sec-div {
+            display: flex;
+            flex-direction: column;
+            gap: 0vw;
+        }
+}
+
+
+@media (max-width: 426px) {
+    .Main-div{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .People-div,
+    .World-div,
+    .Sell-div {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .Image {
+        border-radius: 20px 0 20px;
+    }
+    .Image-1 {
+        border-radius: 0 0 20px;
+    }
+    .Image-2 {
+        border-radius: 0 20px 0 20px;
+        margin-top: 0;
+    }
+    
+    .Sec-div {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+}
