@@ -430,9 +430,47 @@ nav {
     justify-content: space-between;
     
 }
-#signin {
+#Bigbutton {
     font-size: medium;
     width: 180px;
     height: 40px;
 }
+
+.Signup-box{
+    /* background-color: black; */
+    float:left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+    width:55%;
+    
+}
+.Signup-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    /* align-items:flex-start; */
+    background-color: #ffffff;
+    padding: 20px;
+    height: 500px;
+    width:70%;
+}
+.Signup-header{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 60px;
+}
+.Signup-button{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
 
