@@ -34,6 +34,19 @@ nav {
     align-items:baseline;
     font-weight: bold;
 }
+.button-containerlogin {
+    color: rgb(255, 255, 255);
+    width: 320px;
+    height: 70px;
+    display:flex;
+    /* background-color: black; */
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    justify-content:space-evenly;
+    align-items:baseline;
+    font-weight: bold;
+}
 .navbutton {
     height: 41px;
     width: 100px;
@@ -391,6 +404,20 @@ nav {
     padding-top: 80px;
     font-size: larger;
 }
+.sidepngjob{
+    background-image: url(addjob.png);
+    background-size:cover;
+    /* background-color: #ED5353; */
+    float:right;
+    width:45%;
+    color:#ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    font-size: larger;
+}
 .login-container {
     display:flex;
     flex-wrap: wrap;
@@ -404,7 +431,7 @@ nav {
 }
 .login-header{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content:space-between;
     height: 60px;
@@ -437,6 +464,11 @@ nav {
     width: 180px;
     height: 40px;
 }
+#mediumbutton {
+    font-size:large;
+    width: 130px;
+    height: 45px;
+}
 
 .Signup-box{
     /* background-color: black; */
@@ -462,7 +494,7 @@ nav {
 }
 .Signup-header{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content:space-between;
     height: 60px;
@@ -474,23 +506,23 @@ nav {
     justify-content: space-between;
 }
 .detailheader{
+    z-index: +1;
     display:flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content:center;
     /* align-items:; */
-    margin:-15px 10% 30px 10%;
+    margin:15px 10% 30px 10%;
     padding: 30px 60px;
     background-color: #ffffff;
     border-radius: 0px;
     box-shadow:0px 1px 40px 0px #a87f7f7a;
     color: rgb(37, 37, 37);
     text-align: center;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
     }
     .navdepth {
-        z-index: -10;
        background-image: url(Layer3.png);
        background-size:cover;
        background-repeat: no-repeat;
@@ -503,6 +535,9 @@ nav {
        justify-content:space-between;
        width: 100%;
     }
+    .navdepth:hover{
+        z-index: 2;
+    }
     .detailbody{
         display:flex;
         flex-wrap: wrap;
@@ -510,10 +545,134 @@ nav {
         justify-content:space-between;
         
         margin:30px 10% 30px 10%;
-        padding: 20px 30px 20px 30px;
+        padding: 50px 60px;
         background-color: #ffffff;
         border-radius: 0px;
         box-shadow:0px 1px 40px 0px #a87f7f7a;
         color: rgb(37, 37, 37);
         }
+        .red{
+            color: #ED5353;
+            font-size: medium;
+        }
+        .light{
+            color: #777777;
+            font-size: medium;
+        }
+        .detailhead{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content:space-between;
+            /* padding: 40px 0px; */
+            width: 100%;
+        }
+        .detailheadleft{
+            display:flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content:space-between;
+            padding: 40px 0px;
+            gap: 20px;
+        }
+        .detailheadleftbottom{
+            display:grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            
+            grid-gap: 2px;
+        }
+        .detailheadright{
+            display:flex;
+            align-items:center;
+            padding-bottom: 50px;
+        }
+        .detailcontent{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content:space-between;
+            min-height: 700px;
+            font-size:16px;
+        }
+        .skills{
+            display:flex;
+            flex-wrap: wrap;     
+            padding: 0px 0px;     
+        }
+        .detailpara{
+            color:#777777;
+        }
+
+
+
+        /* addjob page-------------------------------------- */
         
+        
+        .addjob-page{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content:;
+            background-color: #ffffff;
+            width:100%;
+            height:100vh;
+        }
+        .addjob-box{
+            
+            float:left;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: flex-start;
+            width:55%;
+            padding-left: 50px ;
+            
+            
+        }
+        .addjob-container {
+            background-color: black;
+            display:flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:flex-start;
+            background-color: #ffffff;
+            padding: 30px 0px;
+            height: 100vh;
+            width:100%;
+            
+        }
+        .addjob-header{
+            display:flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content:space-between;
+            height: 60px;
+        }
+        .addjob-button{
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .addjob-form{
+            display:flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items:space-between;
+            background-color: #ffffff;
+            padding: 0px 30px 0px 0px;
+            height: 100vh;
+            width:100%;
+            font-size: 20px;
+        }
+        .addjob-form-group{
+            display:flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content:space-between;
+            padding: 10px 0px;
+            text-align:center;
+        }

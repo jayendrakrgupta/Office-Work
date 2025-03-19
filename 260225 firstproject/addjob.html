@@ -7,30 +7,56 @@
     <link rel="stylesheet" href="mainproject.css">
 </head>
 <body>
-    <div class="login-page">
-        <div class="Signup-box">
-            <div class="Signup-container">
-                <div class="Signup-header">
-                    <h1>Create an account</h1>
-                    <p style="font-size: medium;">your personal job finder is here</p>
+    <div class="addjob-page">
+        <div class="addjob-box">
+            <div class="addjob-container">
+                <div class="addjob-header">
+                    <h1>Add Job Description</h1>
                 </div>
-                <div class="Signup-form">
-                    <form height="80px" style="display: flex; flex-direction: column; justify-content:space-between; ">
-                        <input type="text" id="name" class="input-bar" name="name" required placeholder="Name">
-                        <input type="email" id="email" class="input-bar" name="email" required placeholder="Email">
-                        <input type="number" id="number" class="input-bar" name="number" required placeholder="Number">
-                        <input type="password" id="password" class="input-bar" name="password" required placeholder="Password">
+                <div class="addjob-form">
+                    <form action="">
+                        <div class="addjob-form-group">
+                            <label for="jobtitle">Job Title</label>
+                            <input type="text" id="jobtitle" name="jobtitle" placeholder="Enter Job Title">
+                        </div>
+                        <div class="addjob-form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Enter Company Name">
+                        </div>
+                        <div class="addjob-form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" placeholder="Enter Job Location">
+                        </div>
+                        <div class="addjob-form-group">
+                            <label for="stipend">Stipend</label>
+                            <input type="text" id="stipend" name="stipend" placeholder="Enter Stipend">
+                        </div>
+                        <div class="addjob-form-group">
+                            <label for="duration">Duration</label>
+                            <input type="text" id="duration" name="duration" placeholder="Enter Duration">
+                        </div>
+                        <div class="addjob-form-group">
+                            <label for="aboutjob">Job Description</label>
+                            <textarea name="aboutjob" id="aboutjob" cols="40" rows="3" placeholder="Enter About Job"></textarea>
+                        </div>
+                        <div class="addjob-form-group">
+                            <label for="aboutcompany">About Company</label>
+                            <textarea name="aboutcompany" id="aboutcompany" cols="40" rows="3" placeholder="Enter About Company"></textarea>
+                        </div>
+                        <div class="addjob-form-group">
+                            <label for="skills">Skills</label>
+                            <input type="text" id="skills" name="skills" placeholder="Enter Skills">
+                        </div>
                     </form>
-                    <p style="font-size: small; color: rgb(166, 166, 166); font-weight: 600; display: flex; justify-content: baseline;"><input type="checkbox" id="terms" name="terms" value="terms">&nbsp;By creating an account, I agree to our terms of use and privacy policy</p>
                 </div>
-                <div class="Signup-button">
-                    <button id="Bigbutton" class="apply">Create Account</button>
-                    <p style="font-size: smaller;">Already have an account? &nbsp;<a href="Login.html">Sign in</a></p>
+                <div class="addjob-button">
+                    <button id="Bigbutton" class="apply" style="font-size: medium;">+ Add Skills</button>
+                    <button id="Bigbutton" class="clear">cancel</button>
                 </div>
             </div>
         </div>
-        <div class="sidepng">
-            <h2 style="z-index: 2;">Your Personal Job Finder</h2>
+        <div class="sidepngjob">
+            <h2 style="z-index: 2;">Recruiter add job details here</h2>
         </div>
     </div>
 </body>
