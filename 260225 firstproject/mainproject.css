@@ -404,20 +404,6 @@ nav {
     padding-top: 80px;
     font-size: larger;
 }
-.sidepngjob{
-    background-image: url(addjob.png);
-    background-size:cover;
-    /* background-color: #ED5353; */
-    float:right;
-    width:45%;
-    color:#ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
-    font-size: larger;
-}
 .login-container {
     display:flex;
     flex-wrap: wrap;
@@ -623,7 +609,7 @@ nav {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-content: flex-start;
             width:55%;
             padding-left: 50px ;
@@ -635,11 +621,11 @@ nav {
             display:flex;
             flex-wrap: nowrap;
             flex-direction: column;
-            justify-content:space-evenly;
+            justify-content:space-around;
             align-items:flex-start;
             background-color: #ffffff;
             padding: 30px 0px;
-            height: 100vh;
+            height: ;
             width:100%;
             
         }
@@ -653,26 +639,65 @@ nav {
         .addjob-button{
             height: 70px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            padding-right: 40px;
+            width:100%;
         }
         .addjob-form{
             display:flex;
             flex-wrap: nowrap;
             flex-direction: column;
-            justify-content:space-evenly;
+            justify-content:center;
             align-items:space-between;
             background-color: #ffffff;
             padding: 0px 30px 0px 0px;
-            height: 100vh;
+            height:;
             width:100%;
-            font-size: 20px;
+            font-size: 17px;
         }
         .addjob-form-group{
             display:flex;
             flex-wrap: nowrap;
             flex-direction: row;
             justify-content:space-between;
-            padding: 10px 0px;
-            text-align:center;
+            align-items: baseline;
+            padding: 10px 10px;
+            text-align:justify;
+        }
+        .formlabel{
+            width: 30%;
+            text-align: left;
+            padding-right: 20px;
+        }
+        .jobinput-bar {
+            width: 100%;
+            height: 40px;
+            margin: 4px 0px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border-style: solid;
+            border-color: #e6e6e6;
+            border-width: ;
+            font-size: 13px;
+            color: rgb(41, 41, 41);
+            background-color: transparent;
+        }
+        .jobinput-bar:focus{
+            outline: none;
+        }
+        .sidepngjob{
+            background-image: url(addjob2.png);
+            background-size:cover;
+            /* background-color: #ED5353; */
+            float:right;
+            width:45%;
+            color:#ffffff;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+            font-size: larger;
+            transform: translateX();
         }
